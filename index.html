@@ -1,0 +1,100 @@
+<html>
+
+<head>
+  <title>Real Time Image Identification App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <center>
+    <h1>Case study between Google Lens and Mobile Net</h1>
+    <img src="google lens.png">
+    <hr>
+    <img id="vs" src="vs.jpg">
+    <hr>
+    <img id="mn" src="mobilenet-logo.png">
+  </center>
+
+  <div class="page-header" id="Environment">
+  </div>
+  <ol class="list-group">
+    <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 env">
+      <h3 class="cl">Test Image:-</h3>
+      <hr>
+      <img class="AT" src="Watch.jpg">
+      <span>
+        <p> Output on Google Lens :- " Watch"</p>
+      </span>
+      <span>
+        <p> Output on Mobile Net :- "Watch"</p>
+      </span>
+      <p>Result:- "Draw"</p>
+      <hr>
+    </li>
+    <br>
+    <br>
+    <li class="list-group-item list-group-item-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 env">
+      <h3 class="cl">Test Image</h3>
+      <hr>
+      <img class="AT" src="Lego.jpg">
+      <span>
+        <p> Output on Google Lens :- " Lego"</p>
+      </span>
+      <span>
+        <p> Output on Mobile Net :- "Movie"</p>
+      </span>
+      <p>Result:- "Google Lens is more accurate"</p>
+      <hr>
+    </li>
+    <br>
+    <br>
+    <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 env">
+      <h3 class="cl">Test Image:-</h3>
+      <hr>
+      <img class="AT" src="Remote.jpg">
+      <span>
+        <p> Output on Google Lens :- "Remote"</p>
+      </span>
+      <span>
+        <p> Output on Mobile Net :- "Remote"</p>
+      </span>
+      <p>Result:- "Draw!"</p>
+      <hr>
+    </li>
+    <br>
+    <br>
+    <li class="list-group-item list-group-item-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 env">
+      <h3 class="cl">Test Image</h3>
+      <hr>
+      <img class="AT" src="Rubix.jpg">
+      <span>
+        <p> Output on Google Lens :- "Rubix"</p>
+      </span>
+      <span>
+        <p> Output on Mobile Net :- "Game"</p>
+      </span>
+      <p>Result:- "Google Lens is more accurate"</p>
+      <hr>
+    </li>
+    <br>
+    <br>
+  </ol>
+  </div>
+  <center>
+    <div class="copy_right_footer">
+      This Case study shows that the Google Lens gives more detailed information.
+    </div>
+  </center>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
